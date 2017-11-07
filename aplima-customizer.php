@@ -52,8 +52,8 @@ if( ! class_exists( 'aplima_customizer' ) ) {
                 wp_enqueue_script('cdn-jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js');
             }
             // Our script
-            if(!wp_script_is('anchor-link')){
-                wp_enqueue_script( 'anchor-link', plugins_url('anchor-link.js', __FILE__), ['cdn-jquery']);
+            if(!wp_script_is('aplima-js-customizer')){
+                wp_enqueue_script( 'aplima-js-customizer', plugins_url('js-customizer.js', __FILE__), ['cdn-jquery']);
             }
         }
     }
